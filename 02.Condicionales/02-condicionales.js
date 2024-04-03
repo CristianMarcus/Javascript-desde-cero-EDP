@@ -54,7 +54,11 @@ function esPrimo(num){
     // Devolver true o false
     // Tu código 👇:
     let verificarnumero = prompt("ingrese un numero")
-    if
+    //los numeros menores o iguales a 1 no son primos
+    if(verificarNumero <=1){
+        console.log("el numero no es primo")
+    }else
+        console.log("el numero es primo")    
 
 }
 
