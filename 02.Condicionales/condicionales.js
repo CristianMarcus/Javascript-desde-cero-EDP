@@ -4,6 +4,11 @@
 // Pidele al usuario que ingrese su edad ( usando prompt() ), y en caso que tenga 18 años o más imprima un mensaje indicandole que puede inscribirse.
 // caso contrario se le indica que no puede inscribirse y la razón.
 // Tu codigo 👇:
+let edad = prompt("Ingrese su edad(la condicion es ser mayor de 18 años)")
+if (edad >= 18) {
+        console.log("puede inscribirse")
+} else
+        console.log("no puede inscribirse,es menor de edad")
 
 
 //_________________________________________
@@ -17,6 +22,18 @@
 // Calificación entre 60 y 69: "Suficiente"
 // Calificación menor a 60: "Insuficiente"
 // Tu codigo 👇:
+let calificacion = prompt("ingrese una calificacion de 0 al 100")
+if(calificacion >=90){
+        console.log("Exelente")
+}else if(calificacion=70 || calificacion<=89){
+        console.log("Bueno")
+}else if(calificacion = 60 || calificacion <= 69){
+        console.log("suficiente")
+}else if(calificacion < 60){
+        console.log("insuficiente")
+}else{
+        console.log("ingrese un caracter valido")
+}
 
 
 //_________________________________________
@@ -26,8 +43,13 @@
 // Ejercicio N° 2:
 // Escribe un programa que solicite al usuario ingresar un número entero y luego determine si es par o impar.
 // Tu codigo 👇:
+let numero = prompt("ingrese un numero")
+if (numero % 2) {
+        console.log("su numero es par")
+} else {
+        console.log("su numero es imoapar")
 
-
+}
 //_________________________________________
 
 
@@ -36,7 +58,32 @@
 // Escribe un programa que solicite al usuario ingresar un número del 1 al 7 representando un día de la semana, y luego imprima el nombre del día correspondiente.
 // Por ejemplo, si el usuario ingresa 1, el programa debe imprimir "Lunes".
 // Tu codigo 👇:
-
+let dias = prompt("ingrese un numero del 1 al 7 para elegir un dia(lunes=1 y viernes=7)")
+switch (parseInt(dias)) {
+        case 1:
+                console.log("lunes");
+                break;
+        case 2:
+                console.log("martes");
+                break;
+        case 3:
+                console.log("miercoles");
+                break;
+        case 4:
+                console.log("jueves");
+                break;
+        case 5:
+                console.log("viernes");
+                break;
+        case 6:
+                console.log("sabado");
+                break;
+        case 7:
+                console.log("domingo");
+                break;
+        default:
+                console.log("ingrese un dia o caracter correcto")        
+}
 
 //_________________________________________
 
@@ -58,7 +105,16 @@
 // Entre 18 y 65 años: "Adulto"
 // Mayor de 65 años: "Senior"
 // Tu codigo 👇:
-
+let edadd = prompt("ingrese su edad")
+if(edadd <= 18){
+        console.log("menor de edad")
+}else if(edadd > 18 && edadd <= 65){
+        console.log("adulto")
+}else if(edadd > 65){
+        console.log("senior")
+}else{
+        console.log("ingrese un caracter o numero correcto")
+}
 
 //_________________________________________
 
